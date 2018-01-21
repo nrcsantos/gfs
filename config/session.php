@@ -1,21 +1,6 @@
 <?php
 
 return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | Default Session Driver
-    |--------------------------------------------------------------------------
-    |
-    | This option controls the default session "driver" that will be used on
-    | requests. By default, we will use the lightweight native driver but
-    | you may specify any of the other wonderful drivers provided here.
-    |
-    | Supported: "file", "cookie", "database", "apc",
-    |            "memcached", "redis", "array"
-    |
-    */
-
     'driver' => env('SESSION_DRIVER', 'file'),
 
     /*
@@ -33,18 +18,8 @@ return [
 
     'expire_on_close' => false,
 
-    /*
-    |--------------------------------------------------------------------------
-    | Session Encryption
-    |--------------------------------------------------------------------------
-    |
-    | This option allows you to easily specify that all of your session data
-    | should be encrypted before it is stored. All encryption will be run
-    | automatically by Laravel and you can use the Session like normal.
-    |
-    */
 
-    'encrypt' => false,
+    'encrypt' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -70,7 +45,7 @@ return [
     |
     */
 
-    'connection' => null,
+    'connection' => 'redis',
 
     /*
     |--------------------------------------------------------------------------

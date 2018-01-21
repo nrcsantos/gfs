@@ -16,7 +16,6 @@ Vue.use(Vuikit)
 const app = new Vue({
     el: '#app',
     data: {
-	message: 'test',
-	radio: "success",
+
     }
 });
